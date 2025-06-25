@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portofolio Website - Nanda Nurvika</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a65e9443e2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#portofolio">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Design & Web Development Explorer</p>
+                <h1>Hi, I'm <span>Nanda Nurvika</span><br>an Information Systems student</h1>
+            </div>
+        </div>
+    </div>
+    <!-------------about--------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Welcome to my digital archive! This blog serves as a collection of my academic work 
+                        and projects throughout my journey as a 6th-semester Information Systems student. 
+                        It's both a personal portfolio and a space to document my learning experiences. 
+                        Hopefully, it can be insightful not only for myself but also for anyone who stops by!</p>
+
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openAbouttab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openAbouttab('education')">Education</p>
+                        <p class="tab-links" onclick="openAbouttab('certification')">Certification</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br>Designing Web/App interface</li>
+                            <li><span>Web Design & Development</span><br>Front-End Development</li>
+                            <li><span>System Analysis & Design</span><br>Analyze user needs and design system workflows using diagrams</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bachelor of Information Systems</span><br>Universitas Bina Sarana Informatika, 2022 - Present</li>
+                            <li><span>Studi Independen Bersertifikat - UI/UX Design</span><br>Startup Campus (MSIB7), 2024</li>
+                            <li><span>...</span><br>...</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certification">
+                        <ul>
+                            <li><span>Certificate of Completion - UI/UX Design</span><br>Startup Campus, Dec 2024</li>
+                            <li><span>Database Systems - Knowledge Proficiency</span><br>Ikatan Ahli Informatika Indonesia, Jul 2023</li>
+                            <li><span>...</span><br>...</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-------------Detail Experience---------->
+    <div id="experience">
+        <div class="container">
+            <div class="container-2">
+                <h1 class="sub-title">Project Activities & Experience</h1>
+
+                <div class="tab-titles">
+                    <p class="tab-links-2 active-link-2" onclick="openExperiencetab('team')">Team</p>
+                    <p class="tab-links-2" onclick="openExperiencetab('individual')">Individual</p>
+                </div>
+                <div class="tab-contents-2 active-tab-2" id="team">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-button">GenSehat Mobile App - UI/UX Design</button>
+                            <div class="accordion-content">
+                                <p>Studi Independen Bersertifikat [MSIB7] <br>Startup Campus <br>Nov - Dec 2024 <br>Role: UX Writer & UI
+                                    Support</p>
+                                <ul>
+                                    <li>Established a consistent tone of voice aligned with the app’s mission and target audience, ensuring
+                                        the copy was
+                                        clear, concise, and action-oriented.</li>
+                                    <li>Contributed to the creation of the UX Research Plan and conducted user research.</li>
+                                    <li>Designed intuitive interfaces for the "Tumbuh Kembang" and "Pranikah" sub-menus.</li>
+                                    <li>Actively addressed team challenges during the design and prototyping process.</li>
+                                    <li>Created reusable components to improve design consistency and streamline the iteration and update
+                                        process of the app
+                                        prototype.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">LaptopKu - Laptop Service Reservation System Website</button>
+                            <div class="accordion-content">
+                                <p>IT Bootcamp - Software Development <br>May 2024 <br>Role: System Analyst</p>
+                                <ul>
+                                    <li>Gathered and analyzed user requirements from customers and technicians.</li>
+                                    <li>Designed use case diagrams and interaction flow between users and service staff.</li>
+                                    <li>Conducted usability testing and black-box testing to evaluate the app's functionality and user
+                                        experience.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <button class="accordion-button">siubsiplay - Game Community Website</button>
+                            <div class="accordion-content">
+                                <p>Course: Web Programming II <br>Oct 2023 <br>Role: System Analyst</p>
+                                <ul>
+                                    <li>Designed activity diagrams to illustrate workflow across multiple platforms.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-contents-2" id="individual">
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <button class="accordion-button">Redesign Wattpad Mobile App - UX Case Study</button>
+                            <div class="accordion-content">
+                                <p>Studi Independen Bersertifikat [MSIB7] <br>Startup Campus <br>Sep - Oct 2024</p>
+                                <ul>
+                                    <li>Applied Design Thinking throughout the process, starting from Empathize, Define, Ideate, Prototype, to
+                                        Testing.</li>
+                                    <li>Designed solutions to reduce decision fatigue through Highlighted Content in the Home page, Offered
+                                        transparency
+                                        by adding a Review Section, and Improved accessibility by implementing a Language Filter</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-button">COVID-19 Information Center - Responsive Informational Website</button>
+                            <div class="accordion-content">
+                                <p>Course: Web Programming I <br>May 2023 <br>Role: Web Designer & Developer</p>
+                                <ul>
+                                    <li>Built a responsive and accessible website layout.</li>
+                                    <li>Developed website using HTML, CSS, and JavaScript.</li>
+                                    <li>Added comment forms using PHP to enhanced site interactivity.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------Project/Portofolio-------->
+    <div id="portofolio">
+        <div class="container">
+            <div class="container-2">
+                <h1 class="sub-title">Portofolio</h1>
+
+                <div class="wrapper">
+                    <i id="left" class="fa-solid  fas fa-angle-left" style="color: #ffffff90"></i>
+                    <ul class="carousel">
+                        <li class="card" onclick="openModal('Link atau aksi lainnya')">
+                            <div class="image-wrapper">
+                                <img src="https://drive.google.com/thumbnail?id=1wepTpNklDFUu1fABJEUagfjvBDOb7PxD" alt="Thumbnail 1"
+                                    draggable="false">
+                            </div>
+                            <h2>Redesign Wattpad Mobile App - UX Case Study</h2>
+                        </li>
+                        <li class="card" onclick="openModal('Link atau aksi lainnya')">
+                            <div class="image-wrapper">
+                                <img src="https://drive.google.com/thumbnail?id=1wepTpNklDFUu1fABJEUagfjvBDOb7PxD" alt="Thumbnail 1"
+                                    draggable="false">
+                            </div>
+                            <h2>Redesign Wattpad Mobile App - UX Case Study</h2>
+                        </li>
+                        <li class="card" onclick="openModal('Link atau aksi lainnya')">
+                            <div class="image-wrapper">
+                                <img src="https://drive.google.com/thumbnail?id=1wepTpNklDFUu1fABJEUagfjvBDOb7PxD" alt="Thumbnail 1"
+                                    draggable="false">
+                            </div>
+                            <h2>Redesign Wattpad Mobile App - UX Case Study</h2>
+                        </li>
+                        <li class="card" onclick="openModal('Link atau aksi lainnya')">
+                            <div class="image-wrapper">
+                                <img src="https://drive.google.com/thumbnail?id=1wepTpNklDFUu1fABJEUagfjvBDOb7PxD" alt="Thumbnail 1"
+                                    draggable="false">
+                            </div>
+                            <h2>Redesign Wattpad Mobile App - UX Case Study</h2>
+                        </li>
+                    </ul>
+                    <i id="right" class="fa-solid fas fa-angle-right" style="color: #ffffff90"></i>      
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-------------Contact----------->
+<div id="contact">
+    <div class="container">
+        <div class="container-2">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> nandanurvika06@gmail.com</p>
+                    <!---<p><i class="fa-solid fa-phone"></i> 0895377983739</p>----->
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © doubleN. Made with <i class="fa-solid fa-heart"></i> by Nanda Nurvika</p>
+    </div>
+</div>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function openAbouttab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var tablinks2 = document.getElementsByClassName("tab-links-2");
+            var tabcontents2 = document.getElementsByClassName("tab-contents-2");
+            function openExperiencetab(tabname) {
+                for (tablink2 of tablinks2) {
+                    tablink2.classList.remove("active-link-2");
+                }
+                for (tabcontent2 of tabcontents2) {
+                    tabcontent2.classList.remove("active-tab-2");
+                }
+                event.currentTarget.classList.add("active-link-2");
+                document.getElementById(tabname).classList.add("active-tab-2");
+            }
+
+        const accordionButtons = document.querySelectorAll('.accordion-button');
+            accordionButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const content = button.nextElementSibling;
+                    button.classList.toggle('active');
+
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + "px";
+                    }
+                });
+            });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const carousel = document.querySelector(".carousel");
+            const arrowBtns = document.querySelectorAll(".wrapper i");
+            const wrapper = document.querySelector(".wrapper");
+
+            const firstCard = carousel.querySelector(".card");
+            const firstCardWidth = firstCard.offsetWidth;    
+
+            let isDragging = false,
+                startX,
+                startScrollLeft,
+                timeoutId;
+
+            const dragStart = (e) => {
+                isDragging = true;
+                carousel.classList.add("dragging");
+                startX = e.pageX;
+                startScrollLeft = carousel.scrollLeft;
+            };
+
+            const dragging = (e) => {
+                if (!isDragging) return;
+
+                // Calculate the new scroll position
+                const newScrollLeft = startScrollLeft - (e.pageX - startX);
+
+                // Check if the new scroll position exceeds 
+                // the carousel boundaries
+                if (newScrollLeft <= 0 || newScrollLeft >=
+                    carousel.scrollWidth - carousel.offsetWidth) {
+
+                    // If so, prevent further dragging
+                    isDragging = false;
+                    return;
+                }
+
+                // Otherwise, update the scroll position of the carousel
+                carousel.scrollLeft = newScrollLeft;
+            };
+
+            const dragStop = () => {
+                isDragging = false;
+                carousel.classList.remove("dragging");
+            };
+
+            carousel.addEventListener("mousedown", dragStart);
+            carousel.addEventListener("mousemove", dragging);
+            document.addEventListener("mouseup", dragStop);
+            wrapper.addEventListener("mouseenter", () =>
+                clearTimeout(timeoutId));
+
+            // Add event listeners for the arrow buttons to 
+            // scroll the carousel left and right
+            arrowBtns.forEach(btn => {
+                btn.addEventListener("click", () => {
+                    carousel.scrollLeft += btn.id === "left" ?
+                        -firstCardWidth : firstCardWidth;
+                });
+            });
+        });
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "-40px";
+        }
+        function closemenu(){
+                sidemenu.style.right = "-220px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbysGvhSdXw-OOdAwgRi7HwUGrLzX_U5KXb7JewZeAVZBpdbM-Xr3rJlEftLoViXqKvMQQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent succesfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
