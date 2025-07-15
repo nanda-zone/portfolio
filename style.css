@@ -75,6 +75,24 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
+
+.btn-cv-nav{
+    background-color: #333333;
+    color: #c0dce8;
+    padding: 8px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-cv-nav:hover{
+    background-color: #121212;
+}
+
+.btn-cv-nav::after{
+    display: none;
+}
+
 .header-text{
     margin-top: 25%;
     /*margin-left: 10%;
