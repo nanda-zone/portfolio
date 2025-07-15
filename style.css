@@ -40,7 +40,6 @@ body{
 }
 #about .container .row{
     margin-top: 50px;
-    margin-bottom: 50px;
 }
 nav{
     display: flex;
@@ -145,6 +144,15 @@ nav ul li a:hover::after{
     padding: 10px 20px;
     border-radius: 20px;
 }
+
+.about-col-2 h1{
+    padding-bottom: 10px;
+}
+
+.about-col-2 p{
+    text-align: justify;
+}
+
 .sub-title{
     font-size: 55px;
     font-weight: 600;
