@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+
+html, body {
+    overflow-x: hidden;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -501,11 +506,15 @@ nav .fa-solid{
         position: fixed;
         top: -5px;
         right: -200px;
-        width: 180px;
+        width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+    }
+
+    nav ul.open {
+        right: 0;
     }
     
     nav ul li{

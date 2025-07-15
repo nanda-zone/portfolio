@@ -367,12 +367,29 @@
     <script>
         var sidemenu = document.getElementById("sidemenu");
 
-        function openmenu(){
-            sidemenu.style.right = "-40px";
-        }
-        function closemenu(){
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
                 sidemenu.style.right = "-220px";
-        }
+            }
+
+            function openmenu() {
+                sidemenu.classList.add("open")
+            }
+
+            function closemenu() {
+                sidemenu.classList.remove("open")
+            }
+
+            // Tutup menu saat salah satu link diklik
+            var menuLinks = sidemenu.querySelectorAll("a");
+            menuLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    closemenu();
+                });
+            });
     </script>
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbysGvhSdXw-OOdAwgRi7HwUGrLzX_U5KXb7JewZeAVZBpdbM-Xr3rJlEftLoViXqKvMQQ/exec'
