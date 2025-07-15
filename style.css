@@ -142,7 +142,7 @@ nav ul li a:hover::after{
     flex-basis: 70%;
     background-color: #ffffff25;
     backdrop-filter: blur(40px);
-    padding: 0 20px;
+    padding: 10px 20px;
     border-radius: 20px;
 }
 .sub-title{
